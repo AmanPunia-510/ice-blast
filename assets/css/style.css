@@ -1,0 +1,303 @@
+@import url("./root.css");
+
+/* ======================================================== MARGIN ========================================================== */
+
+.mt-two {
+  margin-top: 2px;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-28 {
+  margin-top: 28px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-87 {
+  margin-top: 87px;
+}
+
+.mb-220 {
+  margin-bottom: 220px;
+}
+
+/* ======================================================== PADDING ========================================================== */
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-130 {
+  padding-top: 130px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+
+.pt-271 {
+  padding-top: 271px;
+}
+
+/* ======================================================== FLEX_CLASSES ======================================================= */
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-14 {
+  gap: 14px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.gap-28 {
+  gap: 28px;
+}
+
+.gap-60 {
+  gap: 60px;
+}
+
+/* ======================================================== COMMON THINGS ====================================================== */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.common-btn {
+  outline: none;
+  border: none;
+  border-radius: 84px;
+  background-color: var(--color-fa);
+  font-family: var(--ff-acumin);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-150);
+  text-align: center;
+  color: var(--white-color);
+  height: 50px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 3;
+  padding: 0px 20px;
+  width: fit-content;
+}
+
+.max-w-900 {
+  max-width: 900px;
+}
+
+.z-1 {
+  z-index: 1 !important;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.max-w-267 {
+  max-width: 267px;
+}
+
+/* ======================================================== HEADER ================================================================== */
+
+.header {
+  background-image: url("../images/png/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.common-information-svg {
+  background-color: #fa6a00;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.nav {
+  max-width: 1230px;
+  border-radius: 16px;
+}
+
+.header-h {
+  max-width: 730px;
+}
+
+.header-p {
+  max-width: 425px;
+}
+
+.benifit-card {
+  max-width: 544px;
+  padding: 22px;
+  border-radius: 16px;
+  background-color: #e3faff0d;
+  backdrop-filter: blur(9px);
+}
+
+.benifit-svg {
+  width: fit-content;
+  border-radius: 50%;
+  background-color: #fa6a00;
+  padding: 8.61px 6.22px 8.61px 6px;
+}
+
+/* ======================================================== FUTURE ================================================================== */
+
+.future-h {
+  max-width: 351px;
+}
+
+.future-img {
+  max-width: 535px;
+}
+
+.future-section {
+  padding-top: 85px;
+}
+
+.future-bg {
+  top: 167px;
+  left: 0;
+  width: 103%;
+}
+
+.pause-svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* ======================================================== UNDERSTANDING =========================================================== */
+.section2 {
+  background-color: #fa6a00;
+  padding-bottom: 158px;
+}
+
+.understanding-right {
+  top: 357px;
+  right: 0;
+}
+
+.understanding-left {
+  left: 0;
+  bottom: 10px;
+}
+
+.sec2-top {
+  top: 0;
+  width: 100%;
+}
+
+.sec2-bottom {
+  background-color: #fa6a00;
+  margin-top: -1px;
+}
+
+/* ======================================================== ICE DRY ================================================================= */
+
+.cleaning-box {
+  max-width: 533px;
+}
+
+.ice-pos {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.ice-img-content {
+  max-width: 535px;
+}
+
+.dry-section {
+  margin-bottom: 121px;
+}
+
+/* ======================================================== BEHIND SECTION ========================================================= */
+
+/* ======================================================== MIN-WIDTH :1920 ========================================================= */
+
+@media (min-width: 1920px) {
+}
+
+/* ======================================================== MIN-WIDTH :992 ========================================================== */
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 576px) {
+}
+/* ======================================================== MAX-WIDTH :992 ========================================================== */
+
+@media (max-width: 991.1px) {
+}
+
+/* ======================================================== MIN-WIDTH :768 ========================================================== */
+
+@media (max-width: 767.1px) {
+}
+
+/* ======================================================== MIN-WIDTH :576 ========================================================== */
+
+@media (max-width: 575.11px) {
+}
