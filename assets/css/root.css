@@ -80,6 +80,10 @@ ul {
   --fw-800: 800;
   --fw-900: 900;
 
+  /* font faimly */
+
+  --ff-acumin: 'acumin';
+
   /* colors */
   --white-color: #ffffff;
   --black-color: #000000;

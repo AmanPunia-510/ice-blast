@@ -270,7 +270,29 @@
   margin-bottom: 121px;
 }
 
-/* ======================================================== BEHIND SECTION ========================================================= */
+/* ======================================================== BEHIND SECTION ========================================================== */
+
+.behind-section {
+  background-image: url("../images/png/behind.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 254px;
+  padding-bottom: 254px;
+}
+
+.behind-h {
+  max-width: 567px;
+}
+
+.behind-p {
+  max-width: 592px;
+}
+
+.behind-img {
+  border-radius: 24px;
+  border: 4px solid #ffffff80;
+}
 
 /* ======================================================== MIN-WIDTH :1920 ========================================================= */
 
