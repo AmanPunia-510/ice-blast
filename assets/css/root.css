@@ -93,6 +93,7 @@ ul {
   --color-58: #585f6d;
   --color-51: #515d6c;
   --color-fa: #fa6a00;
+  --color-cf: #CFD1D5;
   --color-ff: #fff0e5;
 }
 
@@ -294,6 +295,10 @@ ul {
 
 .color-ff {
   color: var(--color-ff);
+}
+
+.color-cf{
+  color: var(--color-cf);
 }
 
 /* ------------------------------------------------------  Define All Media Screens -------------------------------------------------- */
