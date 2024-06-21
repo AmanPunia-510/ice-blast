@@ -350,8 +350,12 @@
   box-shadow: 0px 0px 12px 0px #0000001a;
 }
 
-.ice-txt{
+.ice-txt {
   max-width: 280px;
+}
+
+.latest-section{
+  padding-bottom: 138px;
 }
 
 /* ======================================================== BLAST SECTION =========================================================== */
@@ -359,6 +363,51 @@
 .blast-p {
   max-width: 966px;
 }
+
+/* ======================================================== MAILING SECTION ========================================================= */
+
+.mail-box {
+  max-width: 958px;
+  min-height: 320px;
+  padding: 68px 226px 40px 227px;
+  border-radius: 42px;
+  background-color: #101a2e;
+  box-shadow: 0px 2px 34px 0px #0000001a;
+}
+
+.email-btn {
+  max-width: 505px;
+  padding: 3px;
+  border-radius: 47px;
+  background-color: var(--white-color);
+  border: 1px solid #ffffff4d;
+}
+
+.email {
+  width: 70%;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+}
+
+.checkbox {
+  border: 0.5px solid #ffffff;
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+}
+
+.mail-position {
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map-img-box {
+  bottom: -104%;
+  max-height: 456px;
+}
+
 /* ======================================================== MIN-WIDTH :1920 ========================================================= */
 
 @media (min-width: 1920px) {

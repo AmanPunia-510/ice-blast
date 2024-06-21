@@ -82,7 +82,7 @@ ul {
 
   /* font faimly */
 
-  --ff-acumin: 'acumin';
+  --ff-acumin: "acumin";
 
   /* colors */
   --white-color: #ffffff;
@@ -92,9 +92,11 @@ ul {
   --color-10: #101a2e;
   --color-58: #585f6d;
   --color-51: #515d6c;
+  --color-d7: #D1D3D7;
   --color-fa: #fa6a00;
-  --color-cf: #CFD1D5;
+  --color-cf: #cfd1d5;
   --color-40: #404858;
+  --color-e7: #e7e8ea;
   --color-ff: #fff0e5;
 }
 
@@ -298,12 +300,20 @@ ul {
   color: var(--color-ff);
 }
 
-.color-cf{
+.color-cf {
   color: var(--color-cf);
 }
 
-.color-40{
+.color-40 {
   color: var(--color-40);
+}
+
+.color-e7 {
+  color: var(--color-e7);
+}
+
+.color-d7{
+  color: var(--color-d7);
 }
 
 /* ------------------------------------------------------  Define All Media Screens -------------------------------------------------- */
