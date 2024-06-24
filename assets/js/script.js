@@ -28,8 +28,7 @@ accordian_items.forEach((items) => {
       main_h.style.color = "white";
       svg.innerHTML = "-";
       svg.style.color = "white";
-    }
-    else {
+    } else {
       paragraph.classList.remove("d-block");
       paragraph.classList.add("d-none");
       svg.innerHTML = "+";
@@ -39,6 +38,30 @@ accordian_items.forEach((items) => {
     }
   });
 });
+
+var gallerySlider = new Swiper(".gallery-slider", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  effect: "coverflow",
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 2.5,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 100,
+    depth: 150,
+    modifier: 1.5,
+    slideShadows: false,
+  },
+});
+
 // ===================================== PRELOADER ========================================//
 
 // const preloader = document.querySelector(".preloader");
