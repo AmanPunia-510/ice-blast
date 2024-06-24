@@ -48,6 +48,7 @@ var gallerySlider = new Swiper(".gallery-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    dots: false,
   },
   effect: "coverflow",
   loop: true,
