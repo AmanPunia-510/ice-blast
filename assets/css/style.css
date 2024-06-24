@@ -60,8 +60,16 @@
 
 /* ======================================================== PADDING ========================================================== */
 
+.pt-18 {
+  padding-top: 18px;
+}
+
 .pb-40 {
   padding-bottom: 40px;
+}
+
+.pt-57 {
+  padding-top: 57px;
 }
 
 .pt-100 {
@@ -310,6 +318,7 @@
   background-color: #f3f3f4;
   border: 1px solid #101a2e33;
   border-radius: 14px;
+  transition: all 500ms linear !important;
 }
 
 .accordian-txt-or-svg {
@@ -319,6 +328,7 @@
 .accordian-p {
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 24px;
 }
 
 .ask-diffrent-que {
@@ -352,10 +362,6 @@
 
 .ice-txt {
   max-width: 280px;
-}
-
-.latest-section{
-  padding-bottom: 138px;
 }
 
 /* ======================================================== BLAST SECTION =========================================================== */
@@ -397,6 +403,10 @@
   border-radius: 4px;
 }
 
+.mail-box {
+  top: 110px;
+}
+
 .mail-position {
   top: -45px;
   left: 50%;
@@ -404,16 +414,44 @@
 }
 
 .map-img-box {
-  bottom: -104%;
-  max-height: 456px;
+  height: 100%;
+}
+
+/* ======================================================== FOOTER ================================================================== */
+
+.footer {
+  background-color: #101a2e;
+  padding-top: 38px;
+  padding-bottom: 33px;
+}
+
+.color-10 {
+  color: var(--color-10);
+}
+
+.accord_back_clr {
+  background: var(--color-10) !important;
+}
+
+.footer-p {
+  max-width: 350px;
+}
+
+.common-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fa6a00;
 }
 
 /* ======================================================== MIN-WIDTH :1920 ========================================================= */
 
 @media (min-width: 1920px) {
+  .understanding-left, .understanding-right{
+    position: unset !important;
+    width: 100% !important;
+  }
 }
-
-/* ======================================================== MIN-WIDTH :992 ========================================================== */
 
 @media (min-width: 992px) {
 }
