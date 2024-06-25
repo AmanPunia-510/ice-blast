@@ -50,14 +50,6 @@
   margin-top: 80px;
 }
 
-.mt-87 {
-  margin-top: 87px;
-}
-
-.mb-220 {
-  margin-bottom: 220px;
-}
-
 /* ======================================================== PADDING ========================================================== */
 
 .pt-18 {
@@ -189,6 +181,11 @@
   border-radius: 16px;
 }
 
+.top-nav {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .header-h {
   max-width: 730px;
 }
@@ -203,6 +200,7 @@
   border-radius: 16px;
   background-color: #e3faff0d;
   backdrop-filter: blur(9px);
+  margin-bottom: 85px;
 }
 
 .benifit-svg {
@@ -227,7 +225,7 @@
 }
 
 .future-bg {
-  top: 167px;
+  top: 157px;
   left: 0;
   width: 103%;
 }
@@ -361,8 +359,7 @@
   right: 100px;
   top: 0;
 }
-
-.quote-card {
+z .quote-card {
   border-radius: 14px;
   padding: 37px;
   border: 6px solid #fb842cb2;
@@ -632,6 +629,31 @@
   background-color: #fa6a00;
 }
 
+/* ======================================================== MIN-WIDTH :576 ========================================================= */
+
+@media (min-width: 576px) {
+}
+
+/* ======================================================== MIN-WIDTH :768 ========================================================= */
+
+@media (min-width: 768px) {
+  .header-h {
+    padding-top: 55px;
+  }
+}
+
+/* ======================================================== MIN-WIDTH :992 ========================================================= */
+
+@media (min-width: 992px) {
+  .mb-lg-220 {
+    margin-bottom: 220px;
+  }
+
+  .header-h {
+    padding-top: 87px;
+  }
+}
+
 /* ======================================================== MIN-WIDTH :1920 ========================================================= */
 
 @media (min-width: 1920px) {
@@ -640,27 +662,132 @@
     position: unset !important;
     width: 100% !important;
   }
+
+  .future-bg {
+    top: 0px;
+    opacity: 40%;
+  }
 }
 
-@media (min-width: 992px) {
-}
+/* ======================================================== MAX-WIDTH :1200 ========================================================= */
 
-@media (min-width: 768px) {
-}
+@media (max-width: 1199.99px) {
+  .move {
+    width: 1140px;
+    margin: 10px -400px;
+    animation: nav_move 10s infinite linear;
+  }
 
-@media (min-width: 576px) {
+  .move:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes nav_move {
+    0% {
+      margin-left: 400px;
+    }
+
+    100% {
+      margin-left: -800px;
+    }
+  }
 }
 /* ======================================================== MAX-WIDTH :992 ========================================================== */
 
-@media (max-width: 991.1px) {
+@media (max-width: 991.11px) {
 }
 
-/* ======================================================== MIN-WIDTH :768 ========================================================== */
+/* ======================================================== MAX-WIDTH :768 ========================================================== */
 
 @media (max-width: 767.1px) {
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative !important;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.5s;
+  }
+
+  .bars {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fa6a00;
+  }
+
+  #bar2 {
+    transition-duration: 0.8s;
+  }
+
+  #bar1,
+  #bar3 {
+    width: 70%;
+  }
+
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+  }
+
+  .navbar-items {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 6;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  #checkbox:checked + .navbar-items {
+    left: 0;
+  }
+
+  .header-h {
+    margin-top: 45px;
+  }
 }
 
-/* ======================================================== MIN-WIDTH :576 ========================================================== */
+/* ======================================================== MAX-WIDTH :576 ========================================================== */
 
 @media (max-width: 575.11px) {
 }

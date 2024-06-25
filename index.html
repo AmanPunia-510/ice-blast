@@ -16,9 +16,9 @@
 <body class="color-bg">
     <!--===================================================== HEADER ============================================================-->
 
-    <header class="header w-100 d-flex flex-column position-relative">
+    <header class="header w-100 d-flex flex-column position-relative overflow-hidden">
         <div class="my-container">
-            <div class="personal-information mt-14 d-flex justify-content-between align-items-center">
+            <div class="personal-information move mt-14 d-flex justify-content-between align-items-center">
 
                 <div class="d-flex align-items-center gap-10">
                     <a href="https://maps.app.goo.gl/gNwn4hrFF5n3Mbsm9" target="_blank">
@@ -78,31 +78,43 @@
             </div>
         </div>
 
-        <nav class="nav mx-auto bg-white w-100 mt-14">
-            <div class="my-container">
-                <div class="navbar-items d-flex align-items-center justify-content-between">
-                    <div class="logo">
-                        <a href="#">
+        <div class="top-nav">
+            <nav class="nav mx-auto bg-white w-100 mt-14">
+                <div class="my-container">
+                    <div class="navbar d-flex align-items-center justify-content-between">
+
+                        <div class="logo">
                             <img src="./assets/images/svg/page-logo.svg" alt="page logo">
-                        </a>
+                        </div>
+
+                        <input type="checkbox" id="checkbox" hidden>
+                        <label for="checkbox" class="toggle d-flex flex-column d-md-none position-relative z-3">
+                            <div class="bars" id="bar1"></div>
+                            <div class="bars" id="bar2"></div>
+                            <div class="bars" id="bar3"></div>
+                        </label>
+
+                        <ul class="navbar-items d-flex align-items-center gap-4">
+                            <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Home</a></li>
+                            <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">About us</a></li>
+                            <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Services</a></li>
+                            <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Pricing</a></li>
+                            <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Blog</a></li>
+                            <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Contact us</a></li>
+                            <li class="d-inline-block d-md-none"><button
+                                    class="call-btn common-btn d-flex justify-content-center align-items-center">Call
+                                    Us</button></li>
+                        </ul>
+
+                        <button
+                            class="call-btn common-btn d-flex justify-content-center align-items-center d-none d-md-flex">Call
+                            Us</button>
                     </div>
-                    <ul class="navbar-items d-flex align-items-center gap-4">
-                        <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Home</a></li>
-                        <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">About us</a></li>
-                        <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Services</a></li>
-                        <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Pricing</a></li>
-                        <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Blog</a></li>
-                        <li><a href="#" class="ff-acumin fw-700 fs-md lh-150 color-63">Contact us</a></li>
-                    </ul>
-
-                    <button class="call-btn common-btn d-flex justify-content-center align-items-center">Call
-                        Us</button>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
         <div class="my-container">
-            <h2 class="header-h ff-gothic fs-18xl text-center white-color lh-120 mx-auto mt-87">Automotive Dry Ice
+            <h2 class="header-h ff-gothic fs-18xl text-center white-color lh-120 mx-auto">Automotive Dry Ice
                 Cleaning</h2>
             <p class="header-p ff-acumin fs-xl lh-125 fw-400 text-center mx-auto pt-3 white-color">Discover the ultimate
                 clean for your machine.
@@ -111,7 +123,7 @@
             <button class="quote-btn common-btn mt-40 mx-auto d-flex justify-content-center align-items-center">Get
                 Instant Quote</button>
 
-            <div class="benifit-card w-100 d-flex justify-content-between align-items-center mt-40 mx-auto mb-220">
+            <div class="benifit-card w-100 d-flex flex-wrap justify-content-center gap-12 justify-content-sm-between align-items-center mt-40 mx-auto mb-lg-220">
                 <div class="d-flex align-items-center gap-12">
                     <div class="benifit-svg d-flex justify-content-center align-items-center">
                         <img src="./assets/images/svg/right-tick.svg" alt="right-tick">
@@ -136,8 +148,8 @@
         </div>
     </header>
 
-    <main>
-        <!--===================================================== FUTURE ========================================================-->
+     <main>
+        <!-- ===================================================== FUTURE ======================================================== -->
         <section class="section1 future-section position-relative overflow-hidden">
             <div class="my-container position-relative z-3">
                 <div class="row align-items-center">
@@ -222,7 +234,7 @@
             <img src="./assets/images/png/future-bg.png" alt="future-bg" class="future-bg position-absolute">
         </section>
 
-        <!--===================================================== UNDERSTANDING =================================================-->
+    <!-- ===================================================== UNDERSTANDING =================================================
         <section class="section2 overflow-hidden  position-relative">
             <img src="./assets/images/png/sec2-top.png" alt="sec2-top" class="sec2-top">
             <div class="my-container">
@@ -270,7 +282,7 @@
         </section>
         <img src="./assets/images/png/sec2-bottom.png" alt="sec2-top" class="sec2-bottom w-100">
 
-        <!--===================================================== DRY ICE =======================================================-->
+        ===================================================== DRY ICE =======================================================
 
         <section class="dry-section">
             <div class="my-container">
@@ -338,7 +350,7 @@
             </div>
         </section>
 
-        <!--===================================================== BEHIND SECTION =================================================-->
+        ===================================================== BEHIND SECTION =================================================
 
         <section class="behind-section">
             <div class="my-container">
@@ -362,7 +374,7 @@
             </div>
         </section>
 
-        <!--===================================================== TALK SECTION ===================================================-->
+        ===================================================== TALK SECTION ===================================================
         <section class="talk-section">
             <div class="my-container">
                 <h2 class="talk-h ff-gothic fw-700 fs-12xl lh-150 color-10 text-center mx-auto">Let's Talk Numbers</h2>
@@ -468,7 +480,7 @@
             </div>
         </section>
 
-        <!--===================================================== SLIDER SECTION =================================================-->
+        ===================================================== SLIDER SECTION =================================================
 
         <section class="slider-section">
             <img src="./assets/images/png/sec2-top.png" alt="sec2-top" class="w-100">
@@ -522,7 +534,7 @@
         </section>
         <img src="./assets/images/png/sec2-bottom.png" alt="sec2-bottom" class="sec2-bottom w-100">
 
-        <!--===================================================== MEET SECTION ====================================================-->
+        ===================================================== MEET SECTION ====================================================
         <section class="meet-section mt-60">
             <div class="my-container position-relative z-1">
                 <div class="row align-items-center">
@@ -552,7 +564,7 @@
         </section>
 
         <img src="./assets/images/png/meet-btm.png" alt="meet-btm" class="w-100">
-        <!--===================================================== ACCORDIAN SECTION ===============================================-->
+        ===================================================== ACCORDIAN SECTION ===============================================
         <section class="accordian-section">
             <div class="my-container">
                 <h2 class="acc-main-h ff-gothic fw-700 fs-12xl lh-150 color-10 text-center">Still Unsure? Check Out
@@ -754,7 +766,7 @@
             </div>
         </section>
 
-        <!--===================================================== BLAST SECTION ====================================================-->
+        ===================================================== BLAST SECTION ====================================================
         <section class="blast-section">
             <img src="./assets/images/png/blast-top.png" alt="blast-top" class="blast-top w-100">
             <div class="my-container">
@@ -774,7 +786,7 @@
 
         </section>
 
-        <!--===================================================== LATEST SECTION ====================================================-->
+        ===================================================== LATEST SECTION ====================================================
         <section class="latest-section">
             <div class="my-container">
                 <h2 class="blast-h fw-700 ff-gothic lh-150 color-10 fs-12xl text-center">Latest News & Insights</h2>
@@ -818,7 +830,7 @@
             </div>
         </section>
 
-        <!--===================================================== MAILING SECTION ====================================================-->
+        ===================================================== MAILING SECTION ====================================================
 
         <seciton class="mail-section position-relative">
             <div class="my-container">
@@ -851,9 +863,9 @@
             <img src="./assets/images/png/map.png" alt="map image" class="map-img-box w-100">
         </seciton>
 
-    </main>
+    </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="my-container">
             <div class="personal-information mt-14 d-flex justify-content-between align-items-center">
 
@@ -1027,7 +1039,7 @@
                 All Rights Reserved.</div>
         </div>
 
-    </footer>
+    </footer> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
