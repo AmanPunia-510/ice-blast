@@ -341,10 +341,25 @@
 
 .accordian1-p {
   max-width: 551px;
+  pointer-events: none;
 }
 
-.acc-p-h2 {
-  max-width: 1004px;
+.pos-rel-11 {
+  position: relative;
+  top: 10px;
+}
+
+.accordian1-h1 {
+  max-width: 398px;
+}
+
+.layer-on-p {
+  height: 100%;
+  width: 100%;
+  max-width: 542px;
+  background: transparent;
+  right: 100px;
+  top: 0;
 }
 
 .quote-card {
@@ -401,12 +416,38 @@
   background-color: var(--white-color);
 }
 
-/* .swiper-btn::after{
-  content: '';
-} */
+.swiper-button-next {
+  position: absolute !important;
+  right: -64px;
+  top: 54%;
+}
 
-.swiper-button-next{
+.swiper-button-prev {
+  position: absolute !important;
+  left: -64px;
+  top: 54%;
+}
 
+.swiper-pagination-bullet {
+  display: none;
+}
+
+.swiper-button-next::after {
+  font-weight: bold;
+  content: "next";
+  font-size: 26px;
+  color: #fa6a00;
+  position: relative;
+  left: 2px;
+}
+
+.swiper-button-prev::after {
+  font-weight: bold;
+  content: "prev";
+  font-size: 26px;
+  color: #fa6a00;
+  position: relative;
+  left: -2px;
 }
 
 .swiper-actions {
