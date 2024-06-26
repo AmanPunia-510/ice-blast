@@ -140,9 +140,20 @@ var gallerySlider = new Swiper(".gallery-slider", {
   },
 });
 
+// ===================================== CHECKBOX ========================================//
+
+
 const check = document.querySelector(".checkbox-part");
 const check_img = document.querySelector(".check-img");
 
 check.addEventListener("click", () => {
   check_img.classList.toggle("d-none");
 })
+
+// ===================================== PRELOADER ========================================//
+
+const preloader = document.querySelector(".preloader");
+
+setTimeout(() => {
+  preloader.classList.add("d-none");
+}, 3000);

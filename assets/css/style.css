@@ -162,6 +162,77 @@
   max-width: 267px;
 }
 
+/* ======================================================== PRELOADER ========================================================== */
+
+.preloader {
+  background-color: #fa6a00;
+  z-index: 100;
+  height: 105%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ip {
+  width: 16em;
+  height: 8em;
+}
+.ip__track {
+  stroke: hsl(var(--hue), 90%, 90%);
+  transition: stroke var(--trans-dur);
+}
+.ip__worm1,
+.ip__worm2 {
+  animation: worm1 2s linear infinite;
+}
+.ip__worm2 {
+  animation-name: worm2;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 90%, 5%);
+    --fg: hsl(var(--hue), 90%, 95%);
+  }
+  .ip__track {
+    stroke: hsl(var(--hue), 90%, 15%);
+  }
+}
+
+/* Animation */
+@keyframes worm1 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    animation-timing-function: steps(1);
+    stroke-dashoffset: -358;
+  }
+  50.01% {
+    animation-timing-function: linear;
+    stroke-dashoffset: 358;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes worm2 {
+  from {
+    stroke-dashoffset: 358;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -358;
+  }
+}
+
 /* ======================================================== HEADER ================================================================== */
 
 .header {
@@ -551,6 +622,11 @@ z .quote-card {
   box-shadow: 0px 0px 12px 0px #0000001a;
 }
 
+.latest-box:hover {
+  box-shadow: 0px 0px 10px #fa6a00;
+  cursor: pointer;
+}
+
 .ice-txt {
   max-width: 280px;
 }
@@ -596,7 +672,7 @@ z .quote-card {
   cursor: pointer;
 }
 
-.checkbox-txt{
+.checkbox-txt {
   cursor: pointer;
 }
 
@@ -900,6 +976,11 @@ z .quote-card {
     max-width: 654px;
     width: 100%;
   }
+
+  .behind-img {
+    min-height: 503px;
+    object-fit: cover;
+  }
 }
 
 /* ======================================================== MAX-WIDTH :768 ========================================================== */
@@ -1085,5 +1166,10 @@ z .quote-card {
 
   .mail-box {
     margin-top: 105px;
+  }
+
+  .behind-img {
+    min-height: 400px;
+    object-fit: cover;
   }
 }
