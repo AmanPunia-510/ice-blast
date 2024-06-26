@@ -100,6 +100,21 @@ ul {
   --color-ff: #fff0e5;
   --color-b7: #b7bac0;
   --color-bg: #f9feff;
+  --color-1a: #0000001a;
+  --color-2e: #101a2e;
+  --color-d4: #d49e14;
+  --color-f3: #f3f3f4;
+
+  --benifit-card: #e3faff0d;
+  --color-101: #101a2e33;
+  --email-btn: #ffffff4d;
+  --accordian-box1: #101a2e1a;
+  --behind-img: #ffffff80;
+  --quote: #fb842cb2;
+  --accordian1: #f5fdff;
+  --accordian2: #f3f3f4;
+  --accordian3: #fdf9f2;
+  --accordian4: #fff3ea;
 }
 
 /* ------------------------------------------------------  Define Font Faimly --------------------------------------------------------- */
@@ -345,8 +360,8 @@ ul {
 
 @media (max-width: 575.1px) {
   :root {
-    --fs-18xl: 42px;
-    --fs-12xl: 38px;
+    --fs-18xl: 39px;
+    --fs-12xl: 28px;
     --fs-10xl: 30px;
     --fs-9xl: 30px;
     --fs-6xl: 22px;
