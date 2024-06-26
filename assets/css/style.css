@@ -593,6 +593,11 @@ z .quote-card {
   width: 23px;
   height: 23px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox-txt{
+  cursor: pointer;
 }
 
 .mail-position {

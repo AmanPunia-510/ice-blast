@@ -139,3 +139,10 @@ var gallerySlider = new Swiper(".gallery-slider", {
     },
   },
 });
+
+const check = document.querySelector(".checkbox-part");
+const check_img = document.querySelector(".check-img");
+
+check.addEventListener("click", () => {
+  check_img.classList.toggle("d-none");
+})
