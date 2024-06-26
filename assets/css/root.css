@@ -346,12 +346,16 @@ ul {
 @media (max-width: 575.1px) {
   :root {
     --fs-18xl: 42px;
-    --fs-12xl: 26px;
+    --fs-12xl: 38px;
     --fs-10xl: 30px;
     --fs-9xl: 30px;
     --fs-6xl: 22px;
+    --fs-4xl: 20px;
+    --fs-3xl: 17px;
     --fs-xl: 17px;
     --fs-lg: 16px;
     --fs-17xl: 48px;
+
+    --lh-150: 130%;
   }
 }
