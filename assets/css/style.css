@@ -621,7 +621,7 @@ z .quote-card {
   background: var(--color-10) !important;
 }
 
-.map:hover{
+.map:hover {
   color: var(--white-color);
   cursor: pointer;
 }
@@ -642,16 +642,16 @@ z .quote-card {
   transition: all 200ms linear;
 }
 
-.common-icon:hover{
+.common-icon:hover {
   background-color: var(--white-color);
 }
 
-.insta-icon1:hover{
-box-shadow: 0px 0px 10px #fa6a00;
-background-color: #fa6a00;
+.insta-icon1:hover {
+  box-shadow: 0px 0px 10px #fa6a00;
+  background-color: #fa6a00;
 }
 
-.insta-icon1:hover svg path{
+.insta-icon1:hover svg path {
   fill: white !important;
 }
 
@@ -883,6 +883,17 @@ background-color: #fa6a00;
 
   .meet-btm {
     margin-top: -129px;
+  }
+
+  .ice-img-content,
+  .cleaning-box {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .future-img {
+    max-width: 654px;
+    width: 100%;
   }
 }
 
