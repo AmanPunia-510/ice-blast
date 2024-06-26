@@ -165,7 +165,7 @@
 /* ======================================================== HEADER ================================================================== */
 
 .header {
-  background-image: url("../images/png/header.png");
+  background-image: url("../images/png/header.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -293,7 +293,7 @@
 /* ======================================================== BEHIND SECTION ========================================================== */
 
 .behind-section {
-  background-image: url("../images/png/behind.png");
+  background-image: url("../images/png/behind.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
