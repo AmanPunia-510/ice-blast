@@ -477,6 +477,7 @@ z .quote-card {
 
 .swiper-slide {
   border: 3px solid var(--white-color);
+  border-radius: 26px;
 }
 
 .swiper-3d {
