@@ -134,7 +134,7 @@ var gallerySlider = new Swiper(".gallery-slider", {
     slideShadows: false,
   },
   breakpoints: {
-    768: {
+    600: {
       slidesPerView: 2.5,
     },
   },

@@ -267,6 +267,10 @@
   max-width: 425px;
 }
 
+.navlist a{
+  transition: all 200ms linear;
+}
+
 .navlist a:hover {
   color: var(--color-fa);
 }
@@ -285,6 +289,10 @@
   border-radius: 50%;
   background-color: var(--color-fa);
   padding: 8.61px 6.22px 8.61px 6px;
+}
+
+.top-txt{
+  transition: all 200ms linear;
 }
 
 .top-txt:hover {
@@ -441,7 +449,8 @@
   right: 100px;
   top: 0;
 }
-z .quote-card {
+
+.quote-card {
   border-radius: 14px;
   padding: 37px;
   border: 6px solid var(--quote);
@@ -494,6 +503,15 @@ z .quote-card {
   border-radius: 50%;
   box-shadow: 0px 0px 26.2px 0px var(--color-fa);
   background-color: var(--white-color);
+  transition: all 200ms linear;
+}
+
+.swiper-btn:hover {
+  box-shadow: 0px 0px 10px var(--black-color);
+}
+
+.swiper-btn:active {
+  transform: scale(0.9);
 }
 
 .swiper-button-next {
@@ -626,6 +644,7 @@ z .quote-card {
   padding: 10px;
   border-radius: 16px;
   box-shadow: 0px 0px 12px 0px var(--color-1a);
+  transition: all 200ms linear;
 }
 
 .latest-box:hover {
@@ -711,6 +730,10 @@ z .quote-card {
 .map:hover {
   color: var(--white-color);
   cursor: pointer;
+}
+
+.footer-list a{
+  transition: all 200ms linear;
 }
 
 .footer-list a:hover {
@@ -880,6 +903,12 @@ z .quote-card {
 @media (max-width: 991.11px) {
   .max-w-p {
     max-width: 650px;
+  }
+
+  .future-p {
+    max-width: 674px;
+    margin: 0 auto;
+    margin-top: 8px;
   }
 
   .acc-main-h {
@@ -1181,5 +1210,22 @@ z .quote-card {
 
   .checkbox {
     padding: 10px;
+  }
+
+  .submit-btm {
+    margin-top: 18px;
+  }
+
+  .blast-h1 {
+    padding-top: unset !important;
+  }
+
+  .email {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .quote-card {
+    padding: 12px;
   }
 }
