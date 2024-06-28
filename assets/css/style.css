@@ -64,10 +64,6 @@
   padding-bottom: 40px;
 }
 
-.pt-57 {
-  padding-top: 57px;
-}
-
 .pb-60 {
   padding-bottom: 60px;
 }
@@ -372,6 +368,9 @@
 
 .dry-section {
   margin-bottom: 121px;
+  position: relative;
+  top: -1px;
+  background-color: var(--color-bg);
 }
 
 /* ======================================================== BEHIND SECTION ========================================================== */
@@ -596,10 +595,8 @@
   border-radius: 34px;
 }
 
-
-
-.gallery-slide.swiper-slide-active::after{
-display: none !important;
+.gallery-slide.swiper-slide-active::after {
+  display: none !important;
 }
 /* ======================================================== MEET SECTION ============================================================ */
 
@@ -613,6 +610,14 @@ display: none !important;
 
 .meet-section {
   padding-bottom: 16px;
+  position: relative;
+  top: -1px;
+  background-color: var(--color-bg);
+  padding-top: 60px;
+}
+
+.meet-img1 {
+  background-color: var(--color-bg);
 }
 
 /* ======================================================== ACCORDIAN SECTION ======================================================= */
@@ -653,6 +658,10 @@ display: none !important;
 
 .accordian-section {
   padding-bottom: 85px;
+}
+
+.acc-main-h {
+  padding-top: 45px;
 }
 
 /* ======================================================== LATEST SECTION ========================================================= */
@@ -792,6 +801,10 @@ display: none !important;
   .w-sm-unset {
     width: unset !important;
   }
+
+  .pt-sm-0 {
+    padding-top: 0px;
+  }
 }
 
 /* ======================================================== MIN-WIDTH :768 ========================================================= */
@@ -801,8 +814,26 @@ display: none !important;
     padding-top: 55px;
   }
 
+  .mt-md-40 {
+    margin-top: 40px;
+  }
+
   .mail-box {
     top: 110px;
+  }
+
+  .blast-section {
+    background-image: url("../images/png/blast-section.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 286px;
+    padding-bottom: 263px;
+    background-color: var(--color-bg);
+  }
+
+  .latest-section {
+    padding-top: 50px;
   }
 }
 
@@ -914,6 +945,10 @@ display: none !important;
     right: 42%;
     top: 95%;
   }
+
+  .meet-btm {
+    margin-top: -78px;
+  }
 }
 /* ======================================================== MAX-WIDTH :992 ========================================================== */
 
@@ -993,6 +1028,7 @@ display: none !important;
 
   .meet-section {
     margin-top: 0;
+    padding-top: 0;
   }
 
   .meet-img1 {
@@ -1011,11 +1047,11 @@ display: none !important;
 
   .talk-section {
     padding-top: 65px;
-    padding-bottom: 29px;
+    padding-bottom: 56px;
   }
 
   .meet-btm {
-    margin-top: -129px;
+    margin-top: 0px;
   }
 
   .ice-img-content,
@@ -1134,12 +1170,8 @@ display: none !important;
     margin-top: 123px;
   }
 
-  .meet-btm {
-    margin-top: -83px;
-  }
-
   .accordian-section {
-    padding-bottom: 55px;
+    padding-bottom: 70px;
     padding-top: 40px;
   }
 
@@ -1149,6 +1181,10 @@ display: none !important;
 
   .acc-main-h {
     padding-top: unset;
+  }
+
+  .dry-section {
+    margin-bottom: 56px;
   }
 }
 
@@ -1176,14 +1212,16 @@ display: none !important;
 
   .swiper-button-prev {
     left: 30%;
+    top: 92%;
   }
 
   .swiper-button-next {
     right: 30%;
+    top: 92%;
   }
 
   .meet-btm {
-    margin-top: -31px;
+    margin-top: -25px;
   }
 
   .accordian-txt-or-svg,
@@ -1196,28 +1234,31 @@ display: none !important;
     padding-top: unset;
   }
 
-  .acc-main-h {
-    padding-top: 27px;
-  }
-
+  .acc-main-h,
+  .future-section,
   .blast-h {
-    padding-top: 32px;
+    padding-top: 48px;
   }
 
   .dry-h {
-    padding-top: 13px;
+    padding-top: 8px;
   }
 
   .dry-section {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 
   .talk-section {
     padding-top: 13px;
+    padding-bottom: 40px;
   }
 
   .mail-box {
     margin-top: 105px;
+  }
+
+  .section2 {
+    margin-top: 39px;
   }
 
   .behind-img {
@@ -1244,5 +1285,14 @@ display: none !important;
 
   .quote-card {
     padding: 12px;
+  }
+
+  .meet-section {
+    padding-top: 12px;
+  }
+
+  .behind-section {
+    padding-top: 146px;
+    padding-bottom: 150px;
   }
 }
